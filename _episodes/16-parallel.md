@@ -180,7 +180,7 @@ Pi: 3.140944, memory: 0.022351741790771484 GiB
 {{ site.local.prompt }} python pi-serial.py 100000000
 Pi: 3.14182724, memory: 2.2351741790771484 GiB
 ```
-{: .bash }
+{: .language-bash }
 
 Here we can see that the estimated amount of memory required scales linearly
 with the number of samples used.
@@ -278,7 +278,7 @@ Pi: 3.1425492, memory: 0.22351741790771484 GiB, time: 0.351212 s
 {{ site.local.prompt }} python pi-serial.py 100000000
 Pi: 3.14146608, memory: 2.2351741790771484 GiB, time: 3.735195 s
 ```
-{: .bash }
+{: .language-bash }
 
 Here we can see that the amount of time required scales approximately linearly
 with the number of samples used.
@@ -380,7 +380,7 @@ To do this, they should be started via a command such as `mpiexec` (or
 which will ensure that the appropriate run-time support for parallelism is
 included.
 
-> ## MPI run-time arguments
+> ## MPI Runtime Arguments
 >
 > On their own, commands such as `mpiexec` can take many arguments specifying
 > how many machines will participate in the execution,
@@ -392,7 +392,7 @@ included.
 > by examining the environment variables set when the job is launched.
 {: .callout}
 
-> ## What changes are needed for an MPI version of the &#960; calculator?
+> ## What Changes Are Needed for an MPI Version of the &#960; Calculator?
 >
 > First, we need to import the `MPI` object from the Python module `mpi4py` by
 > adding an `from mpi4py import MPI` line immediately below the `import
